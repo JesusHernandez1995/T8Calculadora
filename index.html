@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <!-- Centramos la calculadora en el centro -->
+            <div class="col-lg-6 offset-lg-3 d-flex justify-content-center align-items-center vh-100">
+                <div class="calculator-container">
+                    <div class="input-group mb-3 px-4 pt-4" name="formulario">
+                        <input type="text" class="form-control" placeholder="0" id="_calculatorScreen" readonly/>
+                    </div>
+                    <section class="buttons px-sm-5 py-sm-2">
+                        <!-- 1era hilera de botones: Retr | CE | C -->
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-between">
+                                <button class="red" id="_btnDelete">Retr</button>
+                                <button class="red" id="_btnCE">CE</button>
+                                <button class="red" id="_clear">C</button>
+                            </div>
+                        </div>
+
+                        <!-- 2da hilera de botones: 7 | 8 | 9 | / | Raiz -->
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-between">
+                                <button class="black" id="_btn7">7</button>
+                                <button class="black" id="_btn8">8</button>
+                                <button class="black" id="_btn9">9</button>
+                                <button class="black" id="_btnDiv">/</button>
+                                <button class="black" id="_btnRaiz">Raiz</button>
+                            </div>
+                        </div>
+
+                        <!-- 3ra hilera de botones: 4 | 5 | 6 | * | % -->
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-between second-row-buttons">
+                                <button class="black" id="_btn4">4</button>
+                                <button class="black" id="_btn5">5</button>
+                                <button class="black" id="_btn6">6</button>
+                                <button class="black" id="_btnMult">*</button>
+                                <button class="black" id="_btnPorc">%</button>
+                            </div>
+                        </div>
+
+                        <!-- 4ta hilera de botones: 1 | 2 | 3 | - | 1/x -->
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-between third-row-buttons">
+                                <button class="black" id="_btn1">1</button>
+                                <button class="black" id="_btn2">2</button>
+                                <button class="black" id="_btn3">3</button>
+                                <button class="black" id="_btnResta">-</button>
+                                <button class="black" id="_btn/x">1/x</button>
+                            </div>
+                        </div>
+
+                        <!-- 5ta hilera de botones: 0 | +/- | . | + | = -->
+                        <div class="row mt-3">
+                            <div class="col-12 d-flex justify-content-between fourth-row-buttons">
+                                <button class="black" id="_btn0">0</button>
+                                <button class="black" id="_btnNegar">+/-</button>
+                                <button class="black" id="_btnDot">.</button>
+                                <button class="black" id="_btnPlus">+</button>
+                                <button class="black" id="_btnEqual">=</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Custom Js file -->
+    <script src="js/operaciones.js"></script>
+</body>
+</html>

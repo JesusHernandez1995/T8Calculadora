@@ -1,0 +1,140 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Movemos hacia la derecha el placeholder del campo number */
+input[type="text"]::placeholder{ 
+    text-align: right;
+}
+
+input[type="text"]{ 
+    text-align: right;
+}
+
+/* Removemos las flechas del campo number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Damos estilos al contenedor general de la calculadora */
+.calculator-container{
+    background: #f6f8d8;
+    height: 345px;
+    width: 345px;
+    max-height: 345px;
+    border: 3px solid #00008d;
+}
+
+.red{
+    padding: 3px 25px;
+    color: red;
+}
+
+.black{
+    padding: 3px 12px;
+    color: black;
+}
+
+/* Acomodamos el padding del boton '%' para alinearlo con los demás botones */
+.second-row-buttons button:nth-child(5){
+    padding: 3px 19px;
+}
+
+.third-row-buttons button:nth-child(5){
+    padding: 3px 15px;
+}
+
+.fourth-row-buttons button:nth-child(2){
+    padding: 3px 5px;
+}
+
+.fourth-row-buttons button:nth-child(5){
+    padding: 3px 19px;
+}
+
+@media screen and (max-width: 576px){
+    .calculator-container{
+        height: 345px;
+        width: 60vw;
+    }
+
+    .buttons{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .red{
+        padding: 3px 20px;  
+    }
+    
+    .black{
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .red{
+        padding: 3px 15px;  
+    }
+    
+    .black{
+        padding: 3px 8px;
+    }
+}
+
+@media screen and (max-width: 415px){
+    .calculator-container{
+        width: 80vw;
+    }
+
+    .red{
+        padding: 3px 25px;  
+    }
+    
+    .black{
+        padding: 3px 12px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .calculator-container{
+        width: 90vw;
+    }
+    .red{
+        padding: 3px 20px;  
+    }
+    
+    .black{
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 295px){
+    .calculator-container{
+        width: 90vw;
+    }
+    .red{
+        padding: 3px 15px;  
+    }
+    
+    .black{
+        padding: 3px 8px;
+    }
+    .buttons{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
